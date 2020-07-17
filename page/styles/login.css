@@ -15,18 +15,17 @@
 body {
     background: #D8D1F6;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D8D1F6, #000000);
+    /*background: -webkit-linear-gradient(to right, #D8D1F6, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D8D1F6, #000000);
+    /*background: linear-gradient(to right, #D8D1F6, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    font-family: 'Lobster', cursive;
     width: 100%;
-    height: 700px;
+    /*height: 700px;
     display: flex;
     /* centramos de manera horizontal */
     justify-content: center;
-    /*Centramos de manerqa vertical*/
+    /*Centramos de manera vertical*/
     align-items: center;
 
 }
@@ -39,12 +38,15 @@ h1{
 }
 /* Realizamos cambios esteticos para la caja de datos */
 form{
+    margin-top: 100px;
+    font-family: 'Lobster', cursive;
+
     background: #EAE6FC;
     width: 30%;
     padding: 10px 0;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
-    margin: auto;
+    
 }
 
 form .grupo{
@@ -67,7 +69,7 @@ input:focus,textarea:focus{
     outline: none;
     color: rgb(44, 44, 44);
 }
- /* Hacemos que los margenes de cada caja se vuelvann trasnparentes */
+ /* Hacemos que los margenes de cada caja se vuelvan trasnparentes */
 
 input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~label{
     position: absolute;
@@ -75,8 +77,8 @@ input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~label{
     font-size: 12px;
     color: #8b77e2;
 }
-/* Permite que el label se levante e ingresemos datos de manera mas estetica */
 
+/* Permite que el label se levante e ingresemos datos de manera mas estetica */
 label{
     color: var(--colorTextos);
     font-size: 16px;

@@ -1,0 +1,58 @@
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+header{
+    background-color: #9B8DD8;
+    font-family: 'Ubuntu', sans-serif;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.a1__menu{
+    color: black;    
+    text-decoration: none;
+}   
+
+.a2__menu{
+    color: black;    
+    text-decoration: none;
+}
+
+.logo{
+    width: 55px;
+    margin-top: 11px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+}
+
+footer{
+    background-color: #9B8DD8;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.creditos{
+    padding-left: 10px;
+    color: black;    
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+
+}
