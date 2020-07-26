@@ -1,0 +1,15 @@
+const singupForm = document.querySelector('#registerForm');
+
+singupForm.addEventListener('submit', (e)=>{
+    const email = document.querySelector('#Singin-email').value;
+    const password = document.querySelector('#Singin-password').value;
+    e.preventDefault();
+
+    auth
+        .createUserWithEmailAndPassword(email, password)
+        .then(userCredential=>{
+            console.log("Registrado")
+            alert("Registrado con exito, procede a loguearte")
+        })
+    
+})

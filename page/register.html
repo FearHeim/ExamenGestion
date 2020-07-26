@@ -45,7 +45,7 @@
             <label class="label1">Correo Electrónico</label>
         </div>
         <div class="grupo">
-            <input type="password" name="" id="Singin-password" required><span class="barra"></span>
+            <input type="password" name="" id="Singin-password" minlength="6" required><span class="barra"></span>
             <label class="label1">Contraseña</label>
         </div>
         <div></div>
@@ -65,6 +65,41 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAbUVNuJGb7dFaF29wVPUq5LRttmLubCsU",
+            authDomain: "thehollowgamesfear.firebaseapp.com",
+            databaseURL: "https://thehollowgamesfear.firebaseio.com",
+            projectId: "thehollowgamesfear",
+            storageBucket: "thehollowgamesfear.appspot.com",
+            messagingSenderId: "886467791752",
+            appId: "1:886467791752:web:b655fbec0865e5f0ad483d",
+            measurementId: "G-YPKTQL80MK"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const auth = firebase.auth();
+    </script>
+
+
+
+    <!--Llamar codigo-->
+    <script src="src/register.js"></script>
+
+
+    
 </body>
 
 </html>
