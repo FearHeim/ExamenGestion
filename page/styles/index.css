@@ -9,14 +9,20 @@
     
 }
 
+.title{
+    color: rgb(255, 255, 255);
+}
 p{
     margin-top: -60px;
+    color: beige;
 }
+
+
 
 .seccion_owo{
 
     margin-top: 90px;
-    background-color: rgba(134, 86, 165, 0.336);
+    background-color: #0e0e0e;
     border: 2px solid white;
     border-radius: 40px;
     padding: 60px 100px 40px;
@@ -29,15 +35,35 @@ p{
     margin-bottom: 20px;
 }
 
-.start{
-    text-decoration: none;
-    color: white;
-    background-color: #9B8DD8;
-    border: 20px solid #9B8DD8;
-    border-radius: 25px;
+
+
+.menu{
+    margin-right: 30px;
+    padding-top: 30px;
     
 }
 
-.title{
-    color: black;
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.a_inicio{
+    padding-right: 50px;
+}
+
+.a_registro{
+    padding-left: -20px;
+}
+
+.start{
+    text-decoration: none;
+    color: white;
+    background-color: #494949;
+    border: 20px solid #494949;
+    border-radius: 25px;
+    
 }
