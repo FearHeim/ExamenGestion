@@ -23,14 +23,14 @@
             </a>
         </div>
 
-        
+
 
     </header>
 
     <!--Navegación-->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        
+
         <a class="navbar-brand " href="#">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,17 +38,17 @@
         </button>
         <div class="container">
 
-           
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto ">
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="register.html">Registro</a>
                     </li>
-                   
+
                 </ul>
             </div>
 
@@ -62,7 +62,7 @@
             </h1>
             <p>
                 <br>
-                Hollow Games es una página que te permitirá gestionar tus juegos de manera personal, 
+                Hollow Games es una página que te permitirá gestionar tus juegos de manera personal,
                 podrás agregar los que estes jugando y observar como progresas.
                 <br><br>
                 ¡Pronto tendrá integración con Steam!
@@ -84,34 +84,43 @@
 
 
     <!--Codigos necesarios para bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAbUVNuJGb7dFaF29wVPUq5LRttmLubCsU",
+            authDomain: "thehollowgamesfear.firebaseapp.com",
+            databaseURL: "https://thehollowgamesfear.firebaseio.com",
+            projectId: "thehollowgamesfear",
+            storageBucket: "thehollowgamesfear.appspot.com",
+            messagingSenderId: "886467791752",
+            appId: "1:886467791752:web:b655fbec0865e5f0ad483d",
+            measurementId: "G-YPKTQL80MK"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 
 </body>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-
-<script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyAbUVNuJGb7dFaF29wVPUq5LRttmLubCsU",
-        authDomain: "thehollowgamesfear.firebaseapp.com",
-        databaseURL: "https://thehollowgamesfear.firebaseio.com",
-        projectId: "thehollowgamesfear",
-        storageBucket: "thehollowgamesfear.appspot.com",
-        messagingSenderId: "886467791752",
-        appId: "1:886467791752:web:b655fbec0865e5f0ad483d",
-        measurementId: "G-YPKTQL80MK"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-</script>
 
 </html>
