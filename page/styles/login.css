@@ -1,5 +1,5 @@
 /* Agregamos varibles para los colores de los textos dentro de los cuadros de verificacion */
-:root {
+:pana {
     --colorTextos: #000000
 }
 
@@ -13,32 +13,40 @@
 }
 
 
-h1{
+.h1_titulo{
     text-align: center;
     margin: 30px 0;
-    font-weight: 800;
+    font-weight: 300;
     pointer-events: none;
 }
 /* Realizamos cambios esteticos para la caja de datos */
-form{
-    margin-top: 80px;
+.form1{
+    margin-top: 90px;
+    background-color: #0e0e0e;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 60px 90px 40px;
+    min-height: 400px;
+    width: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 100px;
+
     font-family: 'Lobster', cursive;
-    margin-left: 35%;
-    background: #3f3f3f;
-    width: 30%;
-    padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    margin-left: 30%;
+  
 }
 
-form .grupo{
+.form1 .grupo{
     position: relative;
     margin: 45px;
 
 }
 
 .barra{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 input{
@@ -49,23 +57,23 @@ input{
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--colorTextos);
+    border-bottom: 1px solid white;
 }
 input:focus,textarea:focus{
     outline: none;
-    color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
 }
  /* Hacemos que los margenes de cada caja se vuelvan trasparentes */
 
-input:focus~label, input:valid~label, textarea:focus~label,textarea:valid~label{
+input:focus~.label1, input:valid~.label1, textarea:focus~.label1,textarea:valid~.label1{
     position: absolute;
     top: -14px;
     font-size: 12px;
-    color: #0e0e0e;
+    color: #bdbdbd;
 }
 
-/* Permite que el label se levante e ingresemos datos de manera mas estetica */
-label{
+/* Permite que el .label1 se levante e ingresemos datos de manera mas estetica */
+.label1{
     color: var(--colorTextos);
     font-size: 16px;
     position: absolute;
@@ -95,7 +103,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
     transition: 0.3s ease all;
     left: 0%;
 }
- button{
+ .boton{
     background: #000000;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0e0e0e, #000000);
@@ -113,7 +121,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
  }
 
 .go{
-    margin-top: 50px;
+    margin-top: 5px;
     text-align: center;
     margin-bottom: 20px;
     text-decoration: none;
@@ -122,27 +130,16 @@ input:focus~.barra::before, textarea:focus~.barra::before{
 .go_a{
     font-size: x-large;
     text-decoration: underline;
-    color: black;
+    color: rgb(252, 252, 252);
 }
 
- @media screen and (max-width:1100px){
-     form{
-         width: 50%;
-     }
- }
- @media screen and (max-width:600px){
-    form{
-        width: 60%;
+@media only screen and (max-width: 600px){
+    .form1{
+        padding-left: 0%;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        margin-left: 12%;
     }
-}
 
-@media screen and (max-width:450px){
-    form{
-        width: 80%;
-    }
-}
-@media screen and (max-width:300px){
-   form{
-       width: 90%;
-   }
 }
