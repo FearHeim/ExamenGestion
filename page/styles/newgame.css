@@ -1,0 +1,20 @@
+
+.estado_select{
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px){
+    .form1{
+        margin-top: 30px;
+        padding-left: 0%;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        margin-left: 12%;
+    }
+
+    .estado_select{
+        width: 220px;
+    }
+
+}

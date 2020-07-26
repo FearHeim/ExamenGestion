@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content=ie=edge>
+    <title>Agregar juego</title>
+    <link rel="shortcut icon" href="https://icon-library.com/images/bleach-icon/bleach-icon-5.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/newgame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-secondary text-white">
+    <header>
+        <div>
+            <a class="logo" href="index.html">
+                <img class="logo" src="https://icon-library.com/images/bleach-icon/bleach-icon-5.jpg" alt="">
+            </a>
+        </div>
+        
+    </header>
+
+     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand " href="main.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Mostrar lista de juegos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a id="logout" class="nav-link" href="register.html">Salir</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <form class="form1" id="juego-form" action="">
+        <h1>Nuevo juego</h1>
+        
+        <div class="grupo">
+            <input type="email" name="" id="Singin-email" required><span class="barra"></span>
+            <label class="label1">Nombre del juego</label>
+        </div>
+        <div class="grupo">
+            <input type="text" name="" id="Singin-password" minlength="6" required><span class="barra"></span>
+            <label class="label1">Descripción</label>
+        </div>
+        <div class="grupo">
+            <label class="label1">Género</label><br><br>
+            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+                <option class="estado" value="">Seleccione uno</option>
+                <option id="aprobado" value="accion">Accion</option>
+                <option id="rechazado" value="aventura">Aventura</option>
+                <option id="modificar" value="carreras">Carreras</option>
+                <option id="modificar" value="deportes">Deportes</option>
+                <option id="modificar" value="estrategia">Estrategia</option>
+                <option id="modificar" value="mmorpg">MMORPG</option>
+                <option id="modificar" value="rol">Rol</option>
+                <option id="modificar" value="simuladores">Simuladores</option>
+                <option id="modificar" value="fps">FPS</option>
+                <option id="modificar" value="novela visual">Novela visual</option>
+                <option id="modificar" value="shooter isometrico">Shooter isometrico</option>
+                <option id="modificar" value="shooter en 3ra persona">Shooter en 3ra persona</option>
+                <option id="modificar" value="lucha">Luchas</option>
+                
+            </select>
+        </div>
+        <div class="grupo">
+            <label class="label1">Plataforma</label><br><br>
+            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+                <option class="estado" value="">Seleccione uno</option>
+                <option id="Windows" value="Windows">Windows</option>
+                <option id="Linux" value="Linux">Linux</option>
+                <option id="MAC" value="MAC">MAC</option>
+                <option id="Android" value="Android">Android</option>
+                <option id="Ios" value="Ios">Ios</option>
+                <option id="play" value="Play Station">Play Station</option>
+                <option id="xbox" value="Xbox">Xbox</option>
+                
+            </select>
+        </div>
+        
+        <div class="grupo">
+            <label class="label1">Cantidad de jugadores</label><br><br>
+            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+                <option class="estado" value="">Seleccione uno</option>
+                <option id="solo" value="Un jugador">Un jugador</option>
+                <option id="multi" value="Multijugador">Multijugador</option>
+                <option id="pvponline" value="JcJ en línea">JcJ en línea</option>
+                <option id="pvplan" value="JcJ en LAN">JcJ en LAN</option>
+                <option id="coop" value="Cooperativo en línea">Cooperativo en línea</option>
+                <option id="cooplan" value="Cooperativo en LAN">Cooperativo en LAN</option>
+                <option id="coopscreen" value="Cooperativo en pantalla compartida">Cooperativo en pantalla compartida</option>
+                
+            </select>
+        </div>
+        <div class="grupo">
+            
+            <label for="">Fecha de lanzamiento</label>
+            <input type="date" placeholder="Año" name="" id="Singin-password" minlength="6" required><span class="barra"></span>
+        </div>
+        <div class="grupo">
+            <label class="label1">Lenguaje</label><br><br>
+            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+                <option class="estado" value="">Seleccione uno</option>
+                <option id="esp_latam" value="Español latino">Español latino</option>
+                <option id="esp_es" value="Español España">Español España</option>
+                <option id="en" value="Inglés">Inglés</option>
+                <option id="jap" value="Japonés">Japonés</option>
+                <option id="ger" value="Alemán">Alemán</option>
+                
+                
+            </select>
+            
+        </div>
+        <div class="grupo">
+            <input type="number" name="" id="Singin-password" minlength="6" required><span class="barra"></span>
+            <label class="label1">Logros conseguidos</label>
+        </div>
+        <div class="grupo">
+            <input type="number" name="" id="Singin-password" min="0" required><span class="barra"></span>
+            <label class="label1">Valoración de usuario</label>
+        </div>
+       
+        <div></div>
+        <button class="boton" type="submit">Agregar</button>
+    </form>
+
+    <footer class="p-3 bg-dark text-white">
+        <div>
+            <a class="creditos">Página creada por José Palacio y Juan Patiño</a>
+        </div>
+    </footer>
+
+
+
+    <!--Codigos necesarios para bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAbUVNuJGb7dFaF29wVPUq5LRttmLubCsU",
+            authDomain: "thehollowgamesfear.firebaseapp.com",
+            databaseURL: "https://thehollowgamesfear.firebaseio.com",
+            projectId: "thehollowgamesfear",
+            storageBucket: "thehollowgamesfear.appspot.com",
+            messagingSenderId: "886467791752",
+            appId: "1:886467791752:web:b655fbec0865e5f0ad483d",
+            measurementId: "G-YPKTQL80MK"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const auth = firebase.auth();
+    </script>
+
+
+
+    <!--Llamar codigo-->
+    <script src="src/signOut.js"></script>
+
+    
+</body>
+
+</html>

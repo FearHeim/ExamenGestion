@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content=ie=edge>
-    <title>Inicio de sesión</title>
+    <title>Agregar juego</title>
     <link rel="shortcut icon" href="https://icon-library.com/images/bleach-icon/bleach-icon-5.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -19,44 +19,43 @@
 <body class="bg-secondary text-white">
     <header>
         <div>
-            <a class="logo" href="index.html">
+            <a class="logo" href="main.html">
                 <img class="logo" src="https://icon-library.com/images/bleach-icon/bleach-icon-5.jpg" alt="">
             </a>
         </div>
-        
+
     </header>
 
+     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        
-        <a class="navbar-brand " href="index.html">Inicio</a>
+
+        <a class="navbar-brand " href="main.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="container">
 
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="newgame.html">Agregar juego</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a id="logout" class="nav-link" href="register.html">Salir</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
     </nav>
 
-    <form class="form1" id="loginForm" action="">
-        <h1 class=".h1_titulo">Inicia sesión</h1>
-       
-        <div class="grupo">
-            <input type="email" name="" id="login-email" required><span class="barra"></span>
-            <label class="label1">Correo</label>
-        </div>
-        <div class="grupo">
-            <input type="password" name="" id="login-password" required><span class="barra"></span>
-            <label class="label1">Contraseña</label>
-        </div>
-        
-        <button class="boton" type="submit">Entrar</button>
-
-        <div class="go">
-            <p>
-                ¿No tienes una cuenta?
-            </p>
-            <a class="go_a" href="register.html">¡Unete!</a>
-        </div>
-    </form>
+  
 
     <footer class="p-3 bg-dark text-white">
         <div>
@@ -73,7 +72,6 @@
 
 
 
-    
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 
@@ -101,8 +99,11 @@
     </script>
 
 
-    <!--CODIGO NECESARIO PARA LOGIN-->
-    <script src="src/login.js"></script>
+
+    <!--Llamar codigo-->
+    <script src="src/signOut.js"></script>
+
+    
 </body>
 
 </html>
