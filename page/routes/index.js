@@ -12,10 +12,9 @@ router.get('/', async (req, res)=>{
     })
 })
 
-router.post('/add', async (req, res)=>{
+router.post('/', async (req, res)=>{
     const task = new Task(req.body)
     await task.save();
-    res.send('Obtenido')
 })
 
 module.exports=router;
