@@ -1,0 +1,29 @@
+{
+  "name": "examengestion",
+  "version": "1.0.0",
+  "description": "crud para juegos",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.25",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FearHeim/ExamenGestion.git"
+  },
+  "author": "@fearheim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FearHeim/ExamenGestion/issues"
+  },
+  "homepage": "https://github.com/FearHeim/ExamenGestion#readme"
+}
