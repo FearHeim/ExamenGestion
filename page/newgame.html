@@ -56,20 +56,22 @@
         </div>
     </nav>
 
-    <form class="form1" id="juego-form" action="">
+
+    
+    <form class="form1" id="juego-form" action="/add" method="POST">
         <h1>Nuevo juego</h1>
         
         <div class="grupo">
-            <input type="email" name="" id="Singin-email" required><span class="barra"></span>
+            <input type="text" name="Nom_juego" id="Singin-email" required><span class="barra"></span>
             <label class="label1">Nombre del juego</label>
         </div>
         <div class="grupo">
-            <input type="text" name="" id="Singin-password" minlength="6" required><span class="barra"></span>
+            <input type="text" name="Des_juego" id="Singin-password" minlength="6" required><span class="barra"></span>
             <label class="label1">Descripción</label>
         </div>
         <div class="grupo">
             <label class="label1">Género</label><br><br>
-            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+            <select class="estado_select bg-dark" type="select" id="cantidad" name="Genr_juego">   
                 <option class="estado" value="">Seleccione uno</option>
                 <option id="aprobado" value="accion">Accion</option>
                 <option id="rechazado" value="aventura">Aventura</option>
@@ -89,7 +91,7 @@
         </div>
         <div class="grupo">
             <label class="label1">Plataforma</label><br><br>
-            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+            <select name="Plat_juego" class="estado_select bg-dark" type="select" id="cantidad">   
                 <option class="estado" value="">Seleccione uno</option>
                 <option id="Windows" value="Windows">Windows</option>
                 <option id="Linux" value="Linux">Linux</option>
@@ -104,7 +106,7 @@
         
         <div class="grupo">
             <label class="label1">Cantidad de jugadores</label><br><br>
-            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+            <select name="Num_juego" class="estado_select bg-dark" type="select" id="cantidad" >   
                 <option class="estado" value="">Seleccione uno</option>
                 <option id="solo" value="Un jugador">Un jugador</option>
                 <option id="multi" value="Multijugador">Multijugador</option>
@@ -123,7 +125,7 @@
         </div>
         <div class="grupo">
             <label class="label1">Lenguaje</label><br><br>
-            <select class="estado_select bg-dark" type="select" id="cantidad" onchange="getComboA(this)">   
+            <select name="Leng_juego" class="estado_select bg-dark" type="select" id="cantidad">   
                 <option class="estado" value="">Seleccione uno</option>
                 <option id="esp_latam" value="Español latino">Español latino</option>
                 <option id="esp_es" value="Español España">Español España</option>
@@ -136,12 +138,13 @@
             
         </div>
         <div class="grupo">
-            <input type="number" name="" id="Singin-password" minlength="6" required><span class="barra"></span>
-            <label class="label1">Logros conseguidos</label>
+            <label class="label1">Logros conseguidos</label><br><br>
+            <input type="number" name="Log_juego" id="Singin-password" minlength="6" required><span class="barra"></span>
+            
         </div>
         <div class="grupo">
-            <input type="number" name="" id="Singin-password" min="0" required><span class="barra"></span>
-            <label class="label1">Valoración de usuario</label>
+            <label class="label1">Valoración de usuario</label><br><br>
+            <input type="number" name="Valo_juego" id="Singin-password" min="0" max="100" required><span class="barra"></span>
         </div>
        
         <div></div>

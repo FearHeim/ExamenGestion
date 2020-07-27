@@ -5,12 +5,17 @@ const mongoose = require('mongoose')
 const app=express();
 
 //Conectar a mongo
-mongoose.connect('mongodb+srv://proto:quacTugxMlEP5ftY@proyectocrud.3mvfq.mongodb.net/game?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://proto:quacTugxMlEP5ftY@proyectocrud.3mvfq.mongodb.net/game?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
     .then(db=>console.log('Base de datos conectada'))
     .catch(err=>console.log(err))
 
 //Importar Rutas
 const indexRoutes = require('./page/routes/index');
+
+
 
 //Configuración
 app.set('port', process.env.PORT || 3000);

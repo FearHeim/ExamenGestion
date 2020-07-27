@@ -2,10 +2,7 @@ const mongoose =require('mongoose');
 const Schema = mongoose.Schema;
 
 const TaskSchema = new Schema({
-    User_juego:{
-        type: String,
-        required: true
-    },
+    
     Nom_juego:{
         type: String,
         required: true
@@ -23,7 +20,7 @@ const TaskSchema = new Schema({
         type: String
     },
     Anio_juego:{
-        type: Date
+        type: String
     },
     Leng_juego:{
         type: String
@@ -37,4 +34,4 @@ const TaskSchema = new Schema({
     
 })
 
-module.exports = mongoose.model('Juego', TaskSchema);
+module.exports = mongoose.model('Prueba', TaskSchema);
