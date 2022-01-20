@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://proto:quacTugxMlEP5ftY@proyectocrud.3mvfq.mongod
     useUnifiedTopology: true
 })
     .then(db=>console.log('Base de datos conectada'))
-    .catch(err=>console.log(err))
+    
 
 //Importar Rutas
 const indexRoutes = require('./page/routes/index');
